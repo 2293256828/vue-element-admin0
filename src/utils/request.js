@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { MessageBox, Message } from 'element-ui'
+import { MessageBox, Message,Notification } from 'element-ui'
 import store from '@/store'
 import { getToken } from '@/utils/auth'
 import router from '@/router'
@@ -43,16 +43,16 @@ service.interceptors.response.use(
    * You can also judge the status by HTTP Status Code
    */
   response => {
-    const code = response.data
-
+    const res = response.data
+    const code=res.code
     // if the custom code is not 20000, it is judged as an error.
-    if (code < 200 || code > 300) {
+    if (code !==0&& (code < 200 || code > 300)) {
       Notification.error({
-        title: response.message
+        title: res.message
       })
       return Promise.reject('error')
     } else {
-      return response.data
+      return response.data.result
     }
   },
   error => {

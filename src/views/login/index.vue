@@ -45,16 +45,17 @@
         </el-form-item>
       </el-tooltip>
 
-      <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">Login</el-button>
 
+      <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">Login</el-button>
+      <el-button type="primary" style="width:100%;margin-bottom: 30px;" @click.native.prevent="handleRegister">Register</el-button>
       <div style="position:relative">
         <div class="tips">
           <span>Username : admin</span>
-          <span>Password : any</span>
+          <span>Password : admin_root</span>
         </div>
         <div class="tips">
-          <span style="margin-right:18px;">Username : editor</span>
-          <span>Password : any</span>
+          <span style="margin-right:18px;">Username : operator</span>
+          <span>Password : operator</span>
         </div>
 
         <el-button class="thirdparty-button" type="primary" @click="showDialog=true">
@@ -98,7 +99,7 @@ export default {
     return {
       loginForm: {
         username: 'admin',
-        password: '111111'
+        password: '123456'
       },
       loginRules: {
         username: [{ required: true, trigger: 'blur', validator: validateUsername }],
@@ -158,6 +159,7 @@ export default {
           this.loading = true
           this.$store.dispatch('user/login', this.loginForm)
             .then(() => {
+              console.log(this.redirect)
               this.$router.push({ path: this.redirect || '/', query: this.otherQuery })
               this.loading = false
             })
