@@ -190,28 +190,17 @@ export default {
           register(this.registerForm).then(
             response => {
               const data = response
-              console.log(data)
-              if (data.result) {
+              if (data) {
                 Message.success("注册成功,跳转至登录页")
                 this.$router.replace('/login')
               } else {
                 Message.warning("账号已被注册")
               }
+        this.loading=false
               resolve()
             }).catch(error => {
-            reject(error)
+            this.loading=false
           })
-
-
-          this.$store.dispatch('user/register', this.registerForm)
-            .then(() => {
-              console.log(this.redirect)
-              this.$router.push({path: this.redirect || '/', query: this.otherQuery})
-              this.loading = false
-            })
-            .catch(() => {
-              this.loading = false
-            })
         } else {
           console.log('error submit!!')
           return false

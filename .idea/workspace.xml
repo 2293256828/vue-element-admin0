@@ -2,29 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbdb2818-4224-4ca2-b516-d8b41ea2ac08" name="Default Changelist" comment="jkjk">
-      <change afterPath="$PROJECT_DIR$/src/views/register/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock/role/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock/role/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock/role/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock/role/routes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/0a562dfe24073b30041fb47f1e77b2c0.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/0a562dfe24073b30041fb47f1e77b2c0.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/739fc5cca73aed3060d4bf0eeae724ef.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/739fc5cca73aed3060d4bf0eeae724ef.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a54ae2551911c27c4191951f825f976f.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a54ae2551911c27c4191951f825f976f.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/0521d59ad28ce9cd48e604aec3162df2.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/0521d59ad28ce9cd48e604aec3162df2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/20280ff74073be6705bdc420196669d3.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/20280ff74073be6705bdc420196669d3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/39d349250cb0102777349a21df12ea17.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/39d349250cb0102777349a21df12ea17.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/42290f8f97875fe7188e6a7acb4e5952.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/42290f8f97875fe7188e6a7acb4e5952.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/4875baaabfe1c73e49a2e9abb5bffb06.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/4875baaabfe1c73e49a2e9abb5bffb06.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/4cc1ef5e3f94251826fa4ddaa57edb81.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/4cc1ef5e3f94251826fa4ddaa57edb81.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/4e1d3e19563d061bc7fa7e1127c804c6.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/4e1d3e19563d061bc7fa7e1127c804c6.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/5fb91c2503982115b00dbced0b9c04f3.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/5fb91c2503982115b00dbced0b9c04f3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/8b547bcea15d8df1aa882a9f554d2f6d.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/8b547bcea15d8df1aa882a9f554d2f6d.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/b6ff39d296c5475b12d75435fd7087b5.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/b6ff39d296c5475b12d75435fd7087b5.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/d1d4ad824aa06077799ea0be7891976d.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/d1d4ad824aa06077799ea0be7891976d.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeaderSearch/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderSearch/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/permission.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/permission.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/validate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/login/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/register/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/register/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +66,7 @@
       <workItem from="1633669555445" duration="337000" />
       <workItem from="1633674014613" duration="573000" />
       <workItem from="1633674627838" duration="3498000" />
-      <workItem from="1633953262945" duration="39857000" />
+      <workItem from="1633953262945" duration="41279000" />
     </task>
     <task id="LOCAL-00001" summary="jkjk">
       <created>1633674526222</created>
@@ -98,7 +82,21 @@
       <option name="project" value="LOCAL" />
       <updated>1634039997641</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="jkjk">
+      <created>1634301431650</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1634301431650</updated>
+    </task>
+    <task id="LOCAL-00004" summary="jkjk">
+      <created>1634301447671</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1634301447671</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
