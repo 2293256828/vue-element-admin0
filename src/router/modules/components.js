@@ -14,85 +14,85 @@ const componentsRouter = {
   children: [
     {
       path: 'tinymce',
-      component: () => import('@/views/components-demo/tinymce'),
+      component: () => import('@/views/default/index'),
       name: 'TinymceDemo',
       meta: { title: 'Tinymce' }
     },
     {
       path: 'markdown',
-      component: () => import('@/views/components-demo/markdown'),
+      component: () => import('@/views/default/index'),
       name: 'MarkdownDemo',
       meta: { title: 'Markdown' }
     },
     {
       path: 'json-editor',
-      component: () => import('@/views/components-demo/json-editor'),
+      component: () => import('@/views/default/index'),
       name: 'JsonEditorDemo',
       meta: { title: 'JSON Editor' }
     },
     {
       path: 'split-pane',
-      component: () => import('@/views/components-demo/split-pane'),
+      component: () => import('@/views/default/index'),
       name: 'SplitpaneDemo',
       meta: { title: 'SplitPane' }
     },
     {
       path: 'avatar-upload',
-      component: () => import('@/views/components-demo/avatar-upload'),
+      component: () => import('@/views/default/index'),
       name: 'AvatarUploadDemo',
       meta: { title: 'Upload' }
     },
     {
       path: 'dropzone',
-      component: () => import('@/views/components-demo/dropzone'),
+      component: () => import('@/views/default/index'),
       name: 'DropzoneDemo',
       meta: { title: 'Dropzone' }
     },
     {
       path: 'sticky',
-      component: () => import('@/views/components-demo/sticky'),
+      component: () => import('@/views/default/index'),
       name: 'StickyDemo',
       meta: { title: 'Sticky' }
     },
     {
       path: 'count-to',
-      component: () => import('@/views/components-demo/count-to'),
+      component: () => import('@/views/default/index'),
       name: 'CountToDemo',
       meta: { title: 'Count To' }
     },
     {
       path: 'mixin',
-      component: () => import('@/views/components-demo/mixin'),
+      component: () => import('@/views/default/index'),
       name: 'ComponentMixinDemo',
       meta: { title: 'Component Mixin' }
     },
     {
       path: 'back-to-top',
-      component: () => import('@/views/components-demo/back-to-top'),
+      component: () => import('@/views/default/index'),
       name: 'BackToTopDemo',
       meta: { title: 'Back To Top' }
     },
     {
       path: 'drag-dialog',
-      component: () => import('@/views/components-demo/drag-dialog'),
+      component: () => import('@/views/default/index'),
       name: 'DragDialogDemo',
       meta: { title: 'Drag Dialog' }
     },
     {
       path: 'drag-select',
-      component: () => import('@/views/components-demo/drag-select'),
+      component: () => import('@/views/default/index'),
       name: 'DragSelectDemo',
       meta: { title: 'Drag Select' }
     },
     {
       path: 'dnd-list',
-      component: () => import('@/views/components-demo/dnd-list'),
+      component: () => import('@/views/default/index'),
       name: 'DndListDemo',
       meta: { title: 'Dnd List' }
     },
     {
       path: 'drag-kanban',
-      component: () => import('@/views/components-demo/drag-kanban'),
+      component: () => import('@/views/default/index'),
       name: 'DragKanbanDemo',
       meta: { title: 'Drag Kanban' }
     }
