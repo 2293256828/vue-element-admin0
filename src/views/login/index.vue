@@ -1,4 +1,5 @@
 <template>
+
   <div class="login-container">
     <el-form ref="loginForm" :model="loginForm" :rules="usernamePwdRules" class="login-form" autocomplete="on"
              label-position="left">
@@ -93,6 +94,7 @@
       <social-sign/>
     </el-dialog>
   </div>
+
 </template>
 
 <script>

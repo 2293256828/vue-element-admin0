@@ -1,6 +1,8 @@
 <template>
   <div id="app">
+    <keep-alive include="Register|Login">
     <router-view />
+    </keep-alive>
   </div>
 </template>
 

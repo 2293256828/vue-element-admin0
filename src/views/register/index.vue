@@ -1,4 +1,5 @@
 <template>
+
   <div class="register-container">
     <el-form ref="registerForm" :model="registerForm" :rules="usernamePwdRules" class="register-form" autocomplete="on"
              label-position="left">
@@ -89,6 +90,7 @@
 
     </div>
   </div>
+
 </template>
 
 <script>
