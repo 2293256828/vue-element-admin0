@@ -55,6 +55,7 @@ export const constantRoutes = [
     component: () => import('@/views/login/index'),
     hidden: true
   },
+
   {
     path: '/auth-redirect',
     component: () => import('@/views/login/auth-redirect'),
@@ -97,6 +98,50 @@ export const constantRoutes = [
         component: () => import('@/views/default/index'),
         name: 'Documentation',
         meta: { title: 'Documentation', icon: 'documentation', affix: true }
+      }
+    ]
+  },
+  {
+    path: '/contract-manage',
+    component: Layout,
+    name: 'ContractManage',
+    meta: { title: 'contract-manage', icon: 'documentation' },
+    children: [
+      {
+        path: 'contract-list',
+        component: () => import('@/views/contract-manage/contract-list'),
+        name: 'ContractList',
+        meta: { title: 'contract-list', icon: 'documentation', affix: true }
+      },
+      {
+        path: 'draft',
+        component: () => import('@/views/contract-manage/draft'),
+        name: 'Draft',
+        meta: { title: 'draft', icon: 'documentation', affix: true }
+      },
+      {
+        path: 'countersign',
+        component: () => import('@/views/contract-manage/countersign'),
+        name: 'Countersign',
+        meta: { title: 'countersign', icon: 'documentation', affix: true }
+      },
+      {
+        path: 'audit',
+        component: () => import('@/views/contract-manage/audit'),
+        name: 'Audit',
+        meta: { title: 'audit', icon: 'documentation', affix: true }
+      },
+      {
+        path: 'finalize-draft',
+        component: () => import('@/views/contract-manage/finalize-draft'),
+        name: 'FinalizeDraft',
+        meta: { title: 'finalize-draft', icon: 'documentation', affix: true }
+      },
+      {
+        path: 'sign',
+        component: () => import('@/views/contract-manage/sign'),
+        name: 'Sign',
+        meta: { title: 'sign', icon: 'documentation', affix: true }
       }
     ]
   },

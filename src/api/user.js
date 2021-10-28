@@ -7,7 +7,7 @@ export function login(data) {
     data
   })
 }
-export function register(data){
+export function register(data) {
   return request({
     url: '/user/register',
     method: 'post',
@@ -16,15 +16,16 @@ export function register(data){
 }
 export function getInfo(token) {
   return request({
-    url: '/user/info',
+    url: '/user/getInfo',
     method: 'get',
     params: { token }
   })
 }
 
-export function logout() {
+export function logout(data) {
   return request({
     url: '/user/logout',
-    method: 'post'
+    method: 'post',
+    data
   })
 }

@@ -3,15 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="cbdb2818-4224-4ca2-b516-d8b41ea2ac08" name="Default Changelist" comment="jkjk">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/article.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/remote-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/remote-search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/role.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/role.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/permission.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/permission.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/modules/permission.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/permission.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/modules/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/dashboard/admin/components/TransactionTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/dashboard/admin/components/TransactionTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/login/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +70,7 @@
       <workItem from="1634637287445" duration="4364000" />
       <workItem from="1635240814240" duration="237000" />
       <workItem from="1635260284562" duration="620000" />
+      <workItem from="1635423718124" duration="1040000" />
     </task>
     <task id="LOCAL-00001" summary="jkjk">
       <created>1633674526222</created>
