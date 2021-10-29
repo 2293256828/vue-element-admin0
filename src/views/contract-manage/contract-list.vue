@@ -1,21 +1,46 @@
 <template>
   <div style="max-width:70%;padding:10px;margin:auto">
-    <div style="display:inline;">
-      <el-row>
-
-        <el-input v-model="searchDTO.contractNo" placeholder="请输入">合同编号</el-input>
-        <el-input v-model="searchDTO.contractName" placeholder="请输入">合同名称</el-input>
-        <el-input v-model="searchDTO.time" placeholder="请输入">完成时间</el-input>
-        <el-select v-model="searchDTO.type" placeholder="请选择">
-          <el-option
-            v-for="item in options"
-            :key="item.value"
-            :label="item.label"
-            :value="item.value"
-          /></el-select></el-row></div>
-
-    <div>
-      <el-dropdown trigger="click" style="float:right;height:50px;padding:3px;">
+    <div class="option">
+      合同编号
+      <el-input
+        v-model="searchDTO.contractNo"
+        clearable
+        placeholder="请输入"
+        style="width:20%;"
+        prefix-icon="el-icon-search"
+        size="medium"
+      />
+      合同名称
+      <el-input
+        v-model="searchDTO.contractName"
+        clearable
+        placeholder="请输入"
+        style="width:20%;"
+        prefix-icon="el-icon-search"
+        size="medium"
+      />
+      状态
+      <el-select
+        v-model="searchDTO.type"
+        placeholder="请选择"
+        size="medium"
+        style="width:20%;"
+      >
+        <el-option
+          v-for="item in options"
+          :key="item.value"
+          :label="item.label"
+          :value="item.value"
+        />
+      </el-select>
+      <el-date-picker
+        v-model="fromtoTime"
+        type="daterange"
+        start-placeholder="开始日期"
+        end-placeholder="结束日期"
+        :picker-options="pickerOptions"
+      />
+           <el-dropdown trigger="click" style="float:right;height:50px;padding:3px;">
         <el-button icon="el-icon-s-operation" size="medium">
           列设置
         </el-button>
@@ -35,6 +60,10 @@
           </el-tree>
         </el-dropdown-menu>
       </el-dropdown>
+    </div>
+
+    <div>
+
       <div>
         <el-table
           :key="tableKey"
@@ -106,6 +135,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import { searchContract } from '@/api/contract-manage'
 
@@ -113,6 +143,37 @@ export default {
   name: 'ContractList',
   data() {
     return {
+      pickerOptions: {
+        shortcuts: [{
+          text: '最近一周',
+          onClick(picker) {
+            const end = new Date()
+            const start = new Date()
+            start.setTime(start.getTime - 3600 * 7 * 24 * 1000)
+            picker.$emit('pick', [start, end])
+          }
+        },
+        {
+          text: '最近一个月',
+          onClick(picker) {
+            const end = new Date()
+            const start = new Date()
+            start.setTime(start.getTime() - 3600 * 1000 * 24 * 30)
+            picker.$emit('pick',[start,end])
+          }
+        },
+        {
+          text: '最近三个月',
+          onClick(picker) {
+            const end = new Date()
+            const start = new Date()
+            start.setTime(start.getTime() - 3600 * 1000 * 24 * 90)
+            picker.$emit('pick', [start, end])
+          }
+        }
+        ]
+      },
+      fromtoTime: ['2000-12-31','2001-12-31'],
       tableKey: 1,
       tableData: [],
       tableHeight: 600,
@@ -163,14 +224,23 @@ export default {
         label: 'label'
       },
       searchDTO: {
-        username: '',
         contractNo: '',
+        from: this.fromtoTime[0] || '',
         contractName: '',
-        type: ''
+        type: this.fromtoTime[1]||'',
+        to: ''
       }
+
     }
   },
+
   created() {
+     
+  },
+
+  methods: {
+    fetchData(){
+   console.log("searchDTO",this.searchDTO)
     searchContract(this.searchDTO).then(response => {
       const data = response
       for (let i = 0, len = data.length; i < len; i++) {
@@ -194,14 +264,8 @@ export default {
       }
       console.log(data)
       this.tableData = data
-    }
-
-    )
-  },
-  mounted() {
-    this.init()
-  },
-  methods: {
+    })
+    },
     init() {
       // 判断本地是否有表格配置数据?加载:忽略
       // 获取表格数据
